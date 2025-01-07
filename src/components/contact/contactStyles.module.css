@@ -1,0 +1,111 @@
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  height: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.titleContainer h1 {
+  /* text-align: center; */
+  color: #000000;
+  font-size: 4.5em !important;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px;
+  gap: 8px;
+  height: 100%;
+  width: 90%;
+}
+
+.formInput {
+  width: 100%;
+  height: 38px;
+}
+
+.formMsg {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  resize: none;
+}
+
+.formBtn {
+  width: 50%;
+  height: 10%;
+  border: none;
+  background-color: #ffd65a;
+  font-size: 1.2em;
+}
+
+.formBtn:hover {
+  background-color: #e6c049;
+}
+
+/* responsive styles  */
+
+/* Small screen */
+@media (max-width: 576px) {
+  .titleContainer h1 {
+    font-size: 2em !important;
+  }
+  .titleContainer {
+    order: -1; /* Move the right div on top */
+    width: 80%;
+  }
+  .formContainer {
+    width: 80%;
+  }
+  .contactContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .socialLinks {
+    display: none;
+  }
+}
+
+/* medium screen  */
+@media (min-width: 576px) and (max-width: 768px) {
+  .titleContainer h1 {
+    font-size: 3em !important;
+  }
+  .titleContainer {
+    order: -1; /* Move the right div on top */
+    width: 80%;
+  }
+  .formContainer {
+    width: 80%;
+  }
+  .contactContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .socialLinks {
+    display: none;
+  }
+}
+
+/* large screen  */
+@media (min-width: 1024px) {
+}

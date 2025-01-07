@@ -1,0 +1,11 @@
+.socialIcon {
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth scaling and color change */
+  color: #000000;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 32px;
+}
+
+.socialIcon:hover {
+  background-color: #e6c049;
+}
