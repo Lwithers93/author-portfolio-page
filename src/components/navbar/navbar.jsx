@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./navbarStyles.module.css";
+import { IoBookOutline } from "react-icons/io5";
 
 export default function Navbar(props) {
   const { selection, setSelection } = props;
@@ -8,7 +9,7 @@ export default function Navbar(props) {
   return (
     <div className={styles.header}>
       <div className={styles.logo} onClick={setSelection(options[0])}>
-        <img src="src/assets/book.png" alt="book-icon" />
+        <IoBookOutline className={styles.img} />
       </div>
       <div className={styles.navbar}>
         {options.map((option, index) => {

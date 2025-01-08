@@ -44,11 +44,11 @@
   font-size: 1.25em;
 }
 
-.logo img {
+.logo .img {
   transition: transform 0.5s ease; /* Gradually transition over 0.5 seconds */
 }
 
-.logo img:hover {
+.logo .img:hover {
   transform: scale(1.2); /*Grow on hover without affecting layout */
   cursor: pointer;
 }
