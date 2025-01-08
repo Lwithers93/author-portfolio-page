@@ -12,7 +12,7 @@ Contact Page: A convenient way to get in touch for collaborations, speaking enga
 
 Responsive Design: Fully optimized for desktop, tablet, and mobile devices.
 
-Published to GitHub pages here -
+Published to GitHub pages here - https://lwithers93.github.io/author-portfolio-page/
 
 ## Technologies Used
 
