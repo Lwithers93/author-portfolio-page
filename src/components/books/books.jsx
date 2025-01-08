@@ -8,7 +8,12 @@ import forestImg from "/src/assets/forest.png";
 import { motion } from "framer-motion"; // For animation on load
 
 export default function Books() {
-  const btnLink = <button>Buy on Amazon</button>;
+  const btnLink = (
+    <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">
+      Buy
+    </a>
+  );
+
   const books = [
     {
       id: 0,
