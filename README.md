@@ -1,8 +1,21 @@
-# React + Vite
+# Author Portfolio Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Author Portfolio! This is project is an author's website showcasing their work as an author, including published books and contact form.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Homepage: A welcoming introduction to who I am and my work.
+
+Books: A detailed showcase of my published books, including descriptions, reviews, and purchase links.
+
+Contact Page: A convenient way to get in touch for collaborations, speaking engagements, or inquiries.
+
+Responsive Design: Fully optimized for desktop, tablet, and mobile devices.
+
+Published to GitHub pages here -
+
+## Technologies Used
+
+HTML5, CSS3, JavaScript, React.js
+
+Feel free to explore, share, and get inspired. Thank you for viewing my project!
