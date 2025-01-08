@@ -12,7 +12,8 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  background-image: url("./assets/bg-img.png"); /* Or use the imported bgImage */
+  background-image: url("./assets/bg-img.png");
+  opacity: 0.95;
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents tiling */

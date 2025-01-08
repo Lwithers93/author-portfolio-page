@@ -1,0 +1,334 @@
+:root {
+  --imgHeight: 260px;
+  --imgWidth: 174px;
+}
+
+.booksContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  overflow: none;
+}
+
+.booksTitle {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 3.5em !important;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: end;
+}
+
+.socialLinks * {
+  color: #ffffff;
+}
+
+.booksTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  padding: 6px;
+}
+
+.bookEntry {
+  display: grid;
+  grid-template-columns: auto auto auto auto; /* 2 equal rows */
+  grid-template-rows: 20% 80%; /* 2 equal rows */
+  border-bottom: solid 1px black;
+  height: 32%;
+  background-color: rgba(255, 255, 255, 0.3); /* Global style */
+  padding: 6px;
+  margin: 6px;
+}
+
+.bookImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  padding: 6px;
+}
+
+.bookImg {
+  height: calc(var(--imgHeight) * 0.7);
+  width: calc(var(--imgWidth) * 0.7);
+  object-fit: cover;
+}
+
+.bookTitle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+  height: 100%;
+  padding: 6px;
+}
+
+.bookTitle h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 2em !important;
+  height: 100%;
+}
+
+.bookDescription {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  padding: 12px;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.bookReview {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+  padding: 12px;
+}
+
+.bookLink {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.bookLink button {
+  border: none;
+  background-color: #ffd65a;
+  font-size: 1.25em;
+  width: 60%;
+  height: auto;
+}
+
+.bookLink button:hover {
+  background-color: #e6c049;
+  cursor: pointer;
+}
+
+/* Customize the scrollbar container */
+::-webkit-scrollbar {
+  display: none;
+  width: 12px; /* Set the width of the vertical scrollbar */
+}
+
+/* Customize the track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Customize the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Optional, adds a border around the thumb */
+}
+
+/* Customize the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* responsive styles  */
+
+/* Small screen */
+@media (max-width: 576px) {
+  .booksTable {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .bookEntry {
+    grid-template-columns: auto auto;
+    grid-template-rows: 30% 60% 10%;
+  }
+  .bookImage {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: 100%;
+  }
+  .bookTitle {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    height: 100%;
+  }
+  .bookReview {
+    display: none;
+  }
+  .bookDescription {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    font-size: 1em !important;
+    height: 100%;
+  }
+  .bookLink {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    height: 100%;
+    align-items: end;
+  }
+  .bookTitle h2 {
+    font-size: 1.1em !important;
+  }
+  .bookImg {
+    height: calc(var(--imgHeight) * 0.5);
+    width: calc(var(--imgWidth) * 0.5);
+  }
+  .bookLink button {
+    font-size: 1em !important;
+    height: 50%;
+    width: 100%;
+  }
+  .booksTitle {
+    font-size: 2em !important;
+  }
+}
+
+/* medium screen  */
+@media (min-width: 577px) and (max-width: 767px) {
+  .booksTable {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .bookEntry {
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% 65% 20%;
+    height: 40% !important;
+    max-height: 60% !important;
+  }
+  .bookImage {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    height: 100%;
+  }
+  .bookTitle {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    height: 100%;
+  }
+  .bookReview {
+    display: none;
+  }
+  .bookDescription {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 1.1em;
+    height: 80%;
+  }
+  .bookLink {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    height: 100%;
+    align-items: end;
+  }
+  .bookTitle h2 {
+    font-size: 1.1em !important;
+  }
+  .bookImg {
+    height: calc(var(--imgHeight) * 0.6);
+    width: calc(var(--imgWidth) * 0.6);
+  }
+  .bookLink button {
+    font-size: 1.05em;
+    height: 50%;
+  }
+  .booksTitle {
+    font-size: 3.5em !important;
+  }
+}
+
+/* large screen  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .booksTable {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .bookEntry {
+    grid-template-columns: auto auto;
+    grid-template-rows: 20% 60% 20%;
+  }
+  .bookImage {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    height: 100%;
+  }
+  .bookTitle {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    height: 100%;
+  }
+  .bookReview {
+    display: none;
+  }
+  .bookDescription {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 1.15em;
+    height: 80%;
+  }
+  .bookLink {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    height: 100%;
+    align-items: end;
+  }
+  .bookTitle h2 {
+    font-size: 1.25em !important;
+  }
+  .bookImg {
+    height: calc(var(--imgHeight) * 0.7);
+    width: calc(var(--imgWidth) * 0.7);
+  }
+  .bookLink button {
+    font-size: 1.2em;
+    height: 50%;
+  }
+  .booksTitle {
+    font-size: 4em !important;
+  }
+}
+
+/* X-Large screen  */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .bookTitle h2 {
+    font-size: 1.5em !important;
+  }
+  .bookImg {
+    height: calc(var(--imgHeight) * 0.6);
+    width: calc(var(--imgWidth) * 0.6);
+  }
+
+  .bookDescription,
+  .bookReview {
+    font-size: 1.15em;
+  }
+
+  .bookLink button {
+    font-size: 1.1em;
+    width: 100%;
+  }
+}

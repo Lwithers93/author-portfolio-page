@@ -19,7 +19,7 @@ function App() {
   }
 
   const dataRender = {
-    home: <Hero />,
+    home: <Hero selection={selection} setSelection={clickHandler} />,
     books: <Books />,
     projects: <Projects />,
     contact: <Contact />,

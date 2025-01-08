@@ -3,13 +3,11 @@ import styles from "./navbarStyles.module.css";
 
 export default function Navbar(props) {
   const { selection, setSelection } = props;
-  const options = ["home", "books", "projects", "contact"];
-
-  console.log("selection value: ", selection);
+  const options = ["home", "books", "contact"];
 
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={setSelection(options[0])}>
         <img src="src/assets/book.png" alt="book-icon" />
       </div>
       <div className={styles.navbar}>

@@ -3,7 +3,9 @@ import styles from "./heroStyles.module.css";
 import { motion } from "framer-motion"; // For animation on load
 import Socials from "../socials/socials";
 
-export default function Hero() {
+export default function Hero(props) {
+  const { selection, setSelection } = props;
+
   return (
     <div className={styles.heroContainer}>
       <div className={styles.leftContainer}>
@@ -28,12 +30,11 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <div className={`${styles.heroSubUpper} ${styles.summaryContainer}`}>
+        <div className={styles.summaryContainer}>
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }} // Delayed animation
-            className={styles.summery}
           >
             Fantasy author. Semi professional magician. Will trade signed copies
             of my books for dragon sketches. 'The Enchanted Kingdom' and
@@ -47,6 +48,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.75 }} // Delayed animation
             className={styles.storeButton}
+            onClick={setSelection("books")}
           >
             Store
           </motion.button>
