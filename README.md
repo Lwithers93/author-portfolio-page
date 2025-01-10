@@ -4,9 +4,9 @@ Welcome to my Author Portfolio! This is project is an author's website showcasin
 
 Features
 
-Homepage: A welcoming introduction to who I am and my work.
+Homepage: A welcoming introduction to they are and their work.
 
-Books: A detailed showcase of my published books, including descriptions, reviews, and purchase links.
+Books: A detailed showcase of the author's published books, including descriptions, reviews, and purchase links.
 
 Contact Page: A convenient way to get in touch for collaborations, speaking engagements, or inquiries.
 
